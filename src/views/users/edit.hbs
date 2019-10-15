@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    {{!-- <h1 class="mt-4">Parts Plus Media</h1>  --}}
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-center bg-dark">
+                    <div class="card-header">
+                        <h3 class="text-white">Edit User</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/users/edit/{{users.iduser}}" method="POST">
+                            <div class="form-group">
+                                <input type="text" value="{{users.fullname}}" name="fullname" placeholder="Full Name" class="form-control"
+                                    autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" value="{{users.username}}" name="username" placeholder="Username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" value="{{users.password}}" name="password" placeholder="Password" class="form-control">
+                            </div>
+                           
+                            <div class="form-group">
+                                <button class="btn btn-danger btn-block">
+                                    Save User
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Role</th>
+                    <th scope="col" class="text-center">Option</th>
+                    <th scope="col" class="text-center">Option</th>
+                </tr>
+            </thead>
+            <tbody class="bg-light">
+                {{#each users}}
+                <tr>
+                    <th scope="row">{{iduser}}</th>
+                    <td>{{fullname}}</td>
+                    <td>{{username}}</td>
+                    <td>{{role}}</td>
+                    <td><a href="/users/edit/{{iduser}}" class="btn btn-secondary btn-block">Edit</a></td>
+                    <td><a href="/users/delete/{{iduser}}" class="btn btn-danger btn-block">Delete</a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

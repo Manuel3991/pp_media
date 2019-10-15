@@ -1,0 +1,110 @@
+<!-- Sidebar -->
+<div class="border-right bg-dark text-white" id="sidebar-wrapper">
+  <div class="sidebar-heading">Parts Plus Media </div>
+  <div class="list-group list-group-flush">
+
+    <ul class="list-unstyled components">
+      <li class="list-group-item list-group-item-action bg-dark ">
+        <a href="#DashboardSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-white">
+          <i class="fas fa-tachometer-alt text-white"></i>
+          &nbsp;Dashboard
+        </a>
+        
+        <ul class="collapse list-unstyled" id="DashboardSubmenu">
+          <li>
+            <a href="#" class="text-white">&nbsp;Reportes 1</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">&nbsp;Reportes 2</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">&nbsp;Reportes 3</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-unstyled components">
+          <li class="list-group-item list-group-item-action bg-dark ">
+            <a href="#ChatRoomSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text-white">
+              <i class="far fa-comments"></i>
+              &nbsp;Chat Room
+            </a>
+          
+            <ul class="collapse list-unstyled" id="ChatRoomSubmenu">
+              <li>
+                <a href="/chat/fb" class="text-white">
+                  &nbsp;&nbsp;<i class="fab fa-facebook"></i>
+                  &nbsp;Facebook</a>
+              </li>
+              <li>
+                <a href="/chat/wa" class="text-white">
+                  &nbsp;&nbsp;<i class="fab fa-whatsapp"></i>
+                  &nbsp;WhatsApp</a>
+              </li>
+              {{!-- <li>
+                <a href="#" class="text-white">
+                  &nbsp;&nbsp;<i class="fab fa-instagram"></i>
+                  &nbsp;Instagram</a>
+              </li> --}}
+            </ul>
+          </li>
+       
+          {{!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Dashboard</a> --}}
+
+          {{!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <i class="far fa-comments"></i>
+            &nbsp;Chat Room</a> --}}
+          <ul class="list-unstyled components">
+            <li class="list-group-item list-group-item-action bg-dark ">
+              <a href="#SettingSubmenu" data-toggle="collapse" aria-expanded="false"
+                class="dropdown-toggle text-white">
+                <i class="fas fa-cogs"></i>
+                &nbsp;Settings
+              </a>
+              
+              <ul class="collapse list-unstyled" id="SettingSubmenu">
+                <li>
+                  <a href="#UserSubmenu" data-toggle="collapse" aria-expanded="false"
+                       class="dropdown-toggle text-white">
+                    &nbsp;&nbsp;<i class="fas fa-users"></i>
+                    &nbsp;Users</a>
+                    <u class="collapse list-unstyled" id="UserSubmenu">
+                      <li>
+                        <a href="/users/add" class="text-white">
+                          &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-user-plus"></i>
+                          Add
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/users" class="text-white">
+                          &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-list-alt"></i>
+                          All Users
+                        </a>
+                      </li>
+                    </u>
+                </li>
+              </ul>
+              <ul class="collapse list-unstyled" id="SettingSubmenu">
+                <li>
+                  <a href="/schedule"  class="text-white">
+                     &nbsp;&nbsp;<i class="far fa-clock"></i>
+                    &nbsp;Schedule
+                  </a>
+                </li>
+              </ul>
+            </li>
+            {{!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+            
+            &nbsp;Settings</a> --}}
+            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+              <i class="fas fa-info-circle"></i>
+              &nbsp;About</a>
+            
+            <!-- <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a> -->
+            <a href="/info/status" class="list-group-item list-group-item-action bg-dark text-white">
+              <i class="fas fa-toggle-on"></i>
+              &nbsp;Status</a>
+             
+  </div>
+</div>
+<!-- /#sidebar-wrapper -->
