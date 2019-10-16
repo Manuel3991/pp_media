@@ -6,6 +6,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const MySQLStore = require('express-mysql-session');
 const passport = require('passport');
+var bodyParser = require("body-parser");
 
 //para web sockets
 const http = require('http');
