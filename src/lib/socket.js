@@ -9,12 +9,14 @@ module.exports = function(io) {
             addMessage(status, res => {
                 if(res){
                     io.emit('refresh',status);
+                    
                 }
                 else{
                     io.emit('error');
                 }
             });
         });
+        
         console.log('new user connected');
 
     //     socket.on('send message',function(data){
