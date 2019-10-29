@@ -9,6 +9,8 @@
   <title>Parts Plus Media</title>
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom styles for this template -->
   <link href="/css/styles.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -18,10 +20,8 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,7 +31,7 @@
     {{> sidebar}}
     {{> navigation}}
 
-     
+
 
   </div>
 
@@ -45,12 +45,25 @@
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script type="text/javascript"
+  <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js">
-  </script>
+    </script>
   <script src="/js/main.js" charset="utf-8"></script>
-  
+
 
 
   <!-- Menu Toggle Script -->
@@ -60,7 +73,7 @@
       $("#wrapper").toggleClass("toggled");
     });
   </script>
- {{!-- menu toggle chat script --}}
+  {{!-- menu toggle chat script --}}
   <script>
     $(document).ready(function () {
       $('#action_menu_btn').click(function () {
@@ -70,21 +83,21 @@
   </script>
 
 
-	 {{!-- <script>
-    $(document).ready(function(){
-          var socket = io();
-          $("#send").click(function(){
-           socket.emit('new', $("#sendMess").val()); //Enviamos nuestro mensaje
-          $("#sendMess").val("");
-           
-          });
-          socket.on('refresh',function(msg){          
-            $('#chat_cont').append('<div class="d-flex justify-content-start mb-4" id="msgc"><div class="msg_cotainer" id="msg_container">'+msg
-								 
-									+'<span class="msg_time">8:40 AM, Today</span></div></div>'  );
-          });
+  {{!-- <script>
+    $(document).ready(function () {
+      var socket = io();
+      $("#send").click(function () {
+        socket.emit('new', $("#sendMess").val()); //Enviamos nuestro mensaje
+        $("#sendMess").val("");
+
+      });
+      socket.on('refresh', function (msg) {
+        $('#chat_cont').append('<div class="d-flex justify-content-start mb-4" id="msgc"><div class="msg_cotainer" id="msg_container">' + msg
+
+          + '<span class="msg_time">8:40 AM, Today</span></div></div>');
+      });
     });
-    </script> --}}
+  </script> --}}
 
 
 </body>
