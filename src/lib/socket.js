@@ -26,10 +26,7 @@ module.exports = function(io) {
     //    });
     });
     var addMessage = async (status,cb) => {
-
-                
-         
-
+                        
          await pool.query(("INSERT INTO `message` (`message`) VALUES ('"+status+"')"), (err,rows)=>{
              if(!err){
                  cb(true);
@@ -40,25 +37,6 @@ module.exports = function(io) {
              }
          });
 
-
-
-    //   await  pool.getConnection(function(err,connection){
-    //         if (err) {
-    //           connection.release();
-    //           callback(false);
-    //           return;
-    //         }
-    //  await  pool.query("INSERT INTO `mensajes` (`mensaje`) VALUES ('"+status+"')", function(err,rows){ //Insertando nuestro comentario
-    //             pool.release();
-    //             if(!err) {
-    //               callback(true);
-    //             }
-    //         });
-    //      connection.on('error', function(err) {
-    //               callback(false);
-    //               return;
-    //         });
-    //     });
     };
 
 

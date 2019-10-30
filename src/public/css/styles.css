@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    /* background: #000; */
   }
   
   #sidebar-wrapper {
@@ -47,30 +48,11 @@ body {
     }
   }
 
-
-
-  /* PROBANDO */
-  /* select{
-    background-color: white;
-    color: white;
-    border: 1px solid #ffffff;
-  }
-  select:after {
-    color: white;
-  }
-  option:checked {
-    background-color: white;
-    
-  }
-  option:not(:checked) {
-    background-color:white;
-    color:#000;
-  } */
-
 /*Estilos para chat prueba*/
 .chat{
   margin-top: 0;
   margin-bottom: 0;  
+  
 }
 /* .cardChat{
   height: 500px;
@@ -85,6 +67,10 @@ body {
 }
 .msg_card_body{
   overflow-y: auto;
+  
+  /* height: 400px; */
+  height: 27em;
+ 
 }
 .card-header{
   border-radius: 15px 15px 0 0 !important;
@@ -96,6 +82,7 @@ border-radius: 0 0 15px 15px !important;
 }
 .container{
   align-content: center;
+  
 }
 .search{
   border-radius: 15px 0 0 15px !important;
@@ -142,12 +129,14 @@ background-color: red !important;
 .contacts{
   list-style: none;
   padding: 0;
+ 
   
 }
 .contacts li{
   width: 100% !important;
   padding: 5px 10px;
   margin-bottom: 15px !important;
+  
 
 }
 /* .active{
