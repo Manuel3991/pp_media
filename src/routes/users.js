@@ -67,7 +67,7 @@ router.get('/',isLoggedIn, async (req, res) => {
 
   // const users = await pool.query('SELECT user.iduser,user.fullname,user.username,user.password,role.role FROM user INNER JOIN role ON user.idrole=role.idrole');
  
-  const users = await pool.query('SELECT user.iduser AS iduser,user.fullname AS fullname,user.username AS username,role.role AS role FROM user LEFT JOIN role ON user.idrole=role.idrole');
+  const users = await pool.query('SELECT user.iduser AS iduser,user.fullname AS fullname,user.username AS username,role.role AS rolename FROM user INNER JOIN role using(idrole)');
   console.log(users);
   res.render('users/list',{users});
  // res.render('users/list');
