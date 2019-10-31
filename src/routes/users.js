@@ -65,8 +65,10 @@ router.get('/delete/:iduser',isLoggedIn, async(req,res)=>{
 
 router.get('/',isLoggedIn, async (req, res) => {
 
-  const users = await pool.query('SELECT user.iduser,user.fullname,user.username,user.password,role.role FROM user INNER JOIN role ON user.idrole=role.idrole');
- console.log(users);
+  // const users = await pool.query('SELECT user.iduser,user.fullname,user.username,user.password,role.role FROM user INNER JOIN role ON user.idrole=role.idrole');
+ 
+  const users = await pool.query('SELECT * FROM user');
+  console.log(users);
   res.render('users/list',{users});
  // res.render('users/list');
 });
