@@ -3,16 +3,11 @@ const router = express.Router();
 const pool = require('../database');
 const helpers = require('../lib/helpers');
 const FBMessenger = require('fb-messenger');
+const request = require("request");
 
 const { isLoggedIn,isNotLoggedIn } = require('../lib/auth');
 
 
-//variables aborrar
-
-// const accountSid = 'AC6eb17f60b737691239dc2991e8ad5b9e';
-// const authToken = 'ce752adef08ecda7036c365eeeb85cf6';
-
-// const client = require('twilio')(accountSid,authToken);
 
 
 
