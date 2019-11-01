@@ -11,5 +11,13 @@ router.get('/status',isLoggedIn, (req,res)=>{
 });
 
 
+router.get('/privacy', (req,res)=>{
+
+res.render('info/privacy');
+    
+});
+
+
+
 
 module.exports = router;
