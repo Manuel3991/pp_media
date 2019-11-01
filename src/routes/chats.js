@@ -63,7 +63,7 @@ router.get("/webhook", (req, res)=> {
   }
 });
 
-router.post("/webhook", async (req, res) => {
+router.post("/webhook", (req, res) => {
   // Verificar si el vento proviene del pagina asociada
   if (req.body.object == "page") {
       // Si existe multiples entradas entraas
