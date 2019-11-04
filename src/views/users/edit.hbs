@@ -10,20 +10,23 @@
                     <div class="card-body">
                         <form action="/users/edit/{{users.iduser}}" method="POST">
                             <div class="form-group">
-                                <input type="text" value="{{users.fullname}}" name="fullname" placeholder="Full Name" class="form-control"
-                                    autofocus>
+                                <input type="text" value="{{users.fullname}}" name="fullname" placeholder="Full Name"
+                                    class="form-control" autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" value="{{users.username}}" name="username" placeholder="Username" class="form-control">
+                                <input type="text" value="{{users.username}}" name="username" placeholder="Username"
+                                    class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="password" value="{{users.password}}" name="password" placeholder="Password" class="form-control">
+                                <input type="password" value="{{users.password}}" name="password" placeholder="Password"
+                                    class="form-control">
                             </div>
-                           
+
                             <div class="form-group">
                                 <button class="btn btn-danger btn-block">
                                     Save User
                                 </button>
+                                <a class="btn btn-secondary btn-block" href="/users" role="button">Cancel</a>
                             </div>
                         </form>
                     </div>
