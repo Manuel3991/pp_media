@@ -86,7 +86,7 @@ function process_event(event){
       // Crear un payload para un simple mensaje de texto
       console.log(message.text);
       var response = {
-          "text": 'Enviaste este mensaje: ' + message.text
+          "text": 'Va que esto dijiste: ' + message.text
           
       }
   }
