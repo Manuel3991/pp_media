@@ -11,7 +11,7 @@ pool.getConnection((err,connection)=>{
 
         console.error('DATABASE CONNECTION WAS CLOSED');
     }
-    if(err.code === 'ER_CON_COUNT_errorOR'){
+    if(err.code === 'ER_CON_COUNT_ERROR'){
         console.error('DATABASE HAS TO MANY CONNECTIONS');
     }
     if(err.code === 'ECONNREFUSED'){
