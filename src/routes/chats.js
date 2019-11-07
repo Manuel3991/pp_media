@@ -84,7 +84,7 @@ function process_event(event){
   // Si en el evento existe un mensaje de tipo texto
   if(message.text){
       // Crear un payload para un simple mensaje de texto
-      console.log(message.text.sender.id);
+      console.log(senderID);
       var response = {
           "text": 'Va que esto dijiste: ' + message.text
           
