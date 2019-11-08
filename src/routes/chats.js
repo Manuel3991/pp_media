@@ -67,7 +67,7 @@ router.post("/webhook", (req, res) => {
           entry.messaging.forEach(function(event) {
               if (event.message) {
                   process_event(event);
-                  console.log(req.body.object);
+                  console.log(req.body.entry);
               }
           });
       });
