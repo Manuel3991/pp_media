@@ -111,11 +111,11 @@
 	<script>
 		$(document).ready(function () {
 			var socket = io();
-			$("#send").click(function () {
-				socket.emit('new', $("#sendMess").val()); //Enviamos nuestro mensaje
-				$("#sendMess").val("");
+		//	$("#send").click(function () {
+		//		socket.emit('new', $("#sendMess").val()); //Enviamos nuestro mensaje
+		//		$("#sendMess").val("");
 
-			});
+		//	});
 			socket.on('refresh', function (msg) {
 				$('#chat_cont').append('<div class="d-flex justify-content-end mb-4" id="msgc"><div class="msg_cotainer_send" id="msg_container">'
 				  + msg + '</div></div>');
