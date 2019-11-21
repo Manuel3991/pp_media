@@ -5,7 +5,7 @@ const helpers = require('../lib/helpers');
 const FBMessenger = require('fb-messenger');
 const request = require("request");
 const socketio = require('socket.io');
-const socket = require('../lib/socket');
+
 
 
 const { isLoggedIn,isNotLoggedIn } = require('../lib/auth');
@@ -69,7 +69,8 @@ router.post("/webhook", (req, res) => {
           // Iterara todos lo eventos capturados
           entry.messaging.forEach(function(event) {
               if (event.message) {
-                socket.emit('new',event.message);
+                req.socket.emit('new',event.message);
+               // socket.emit('new',event.message);
                   process_event(event);
                   console.log(req.body.entry);
               }
