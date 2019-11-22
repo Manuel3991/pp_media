@@ -69,7 +69,8 @@ router.post("/webhook", (req, res) => {
           // Iterara todos lo eventos capturados
           entry.messaging.forEach(function(event) {
               if (event.message) {
-                req.socket.emit('new',event.message);
+                req.io.emit('new',event.message);
+                console.log(req.io.id);
                // socket.emit('new',event.message);
                   process_event(event);
                   console.log(req.body.entry);
