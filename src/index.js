@@ -20,12 +20,20 @@ const {database} = require('./keys');
 
 const app = express();
 //socket io 
-const server = http.createServer(app);
-const io = socketio.listen(server);
+// app.io = require('socket.io')();
+// const server = http.createServer(app);
+// const io = socketio.listen(server);
+const server = http.Server(app);
+var io = socketio(server);
+
+
+
 
 require('./lib/passport');
 
-require('./lib/socket')(io);
+//require('./lib/socket')(io);
+
+
 
 
 
@@ -85,7 +93,8 @@ app.use('/schedule', require('./routes/schedules'));
 app.use(express.static(path.join(__dirname,'public')));
 
 //starting server
-server.listen(app.get('port'),() => {
+server.listen(app.get('port'),() => 
+{
      console.log('Server listen on port', app.get('port'));
 });
 
